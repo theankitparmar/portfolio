@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .abc{
+            position: relative;
+            mix-blend-mode: multiply; /* Blends the image with the background */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">MyPortfolio</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cta">
+                <a href="#contact" class="btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    
+        
+        <section class="hero">
+            <video autoplay muted loop id="bg-video">
+                <source src="./video/earth.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content">
+                <h1>Main Headline: Creative Web Developer Specializing in User-Centric Designs</h1>
+                <h2 class="sub-headline">Turning Ideas into Engaging Digital Experiences</h2>
+                <p>Transforming ideas into stunning web experiences that resonate with users.</p>
+                <a href="#portfolio" class="btn-primary">See My Work</a>
+            </div>
+            <!-- Optional: Animation or Video Loop -->
+            <div class="hero-animation">
+                <!-- Example animation: rotating gear -->
+                <div class="animation-container">
+                    <div class="gear"></div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Other sections like Header and Hero would be here -->
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-photo">
+                <img src="img/dd6a7ba4-a87f-4683-9d74-1d8a80cff1f0.png" alt="Your Name">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm [Your Name], a passionate web developer with a strong background in creating user-centric designs. I specialize in turning complex problems into simple, intuitive solutions. My skills include frontend and backend development, with a keen eye for detail and a commitment to delivering high-quality results.
+                </p>
+                <h3>Key Achievements & Skills</h3>
+                <ul>
+                    <li>Developed and launched a high-traffic e-commerce website that increased sales by 30%.</li>
+                    <li>Expert in modern JavaScript frameworks like React and Angular.</li>
+                    <li>Proficient in creating responsive designs that enhance user experience across all devices.</li>
+                    <li>Strong background in backend technologies including Node.js and Express.js.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other sections like Header, Hero, About would be here -->
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="filter-options">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="app">App Development</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <img src="path-to-your-thumbnail1.jpg" alt="Project 1">
+                    <div class="portfolio-overlay">
+                        <h3>Project Title 1</h3>
+                        <p>Brief description of the project goes here.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="path-to-your-thumbnail2.jpg" alt="Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>Project Title 2</h3>
+                        <p>Brief description of the project goes here.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <img src="path-to-your-thumbnail3.jpg" alt="Project 3">
+                    <div class="portfolio-overlay">
+                        <h3>Project Title 3</h3>
+                        <p>Brief description of the project goes here.</p>
+                    </div>
+                </div>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Web Design</h3>
+                    <p>
+                        Create visually stunning and user-friendly websites tailored to your brand’s needs.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <h3>SEO Optimization</h3>
+                    <p>
+                        Enhance your website’s visibility on search engines and drive more organic traffic.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <h3>App Development</h3>
+                    <p>
+                        Build high-performance and feature-rich mobile and web applications.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <h3>UI/UX Design</h3>
+                    <p>
+                        Design intuitive user interfaces and seamless user experiences for digital products.
+                    </p>
+                </div>
+            </div>
+            <div class="services-cta">
+                <a href="#contact" class="btn-secondary">Request a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other sections like Header, Hero, About, Portfolio, Services would be here -->
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <p class="testimonial-quote">
+                        "The web design and development services provided were exceptional. Highly recommend!"
+                    </p>
+                    <p class="testimonial-author">
+                        - Jane Doe, <span class="testimonial-position">CEO of Creative Co.</span>
+                    </p>
+                </div>
+                <div class="testimonial-item">
+                    <p class="testimonial-quote">
+                        "An outstanding professional with great attention to detail. Our app turned out exactly as envisioned."
+                    </p>
+                    <p class="testimonial-author">
+                        - John Smith, <span class="testimonial-position">Product Manager at Tech Innovations</span>
+                    </p>
+                </div>
+                <div class="testimonial-item">
+                    <p class="testimonial-quote">
+                        "Delivered beyond expectations. The SEO optimization significantly improved our website traffic."
+                    </p>
+                    <p class="testimonial-author">
+                        - Sarah Lee, <span class="testimonial-position">Marketing Director at MarketMinds</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Other sections like Header, Hero, About, Portfolio, Services, Testimonials would be here -->
+
+   <section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+    </div>
+        <div class="contact-content">
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+      
+        
+            <div class="contact-details">
+                <h3 style="text-overflow: block;">Contact Details</h3>
+                <p>Email: <a href="mailto:theankitparmar@gmail.com">your.email@example.com</a></p>
+                <p>Phone: <a href="tel:+919696606410">+1 (234) 567-890</a></p>
+                
+                <h3>Follow Me</h3>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-icon">
+                   
+                        <img src="./icon/linkedin-logo-5476201-4602452.webp" alt="LinkedIn">
+                       
+                    </a>
+                    <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon">
+                        <img src="./icon/twitter-3d-icon-free-png.webp" alt="Twitter">
+                    </a>
+                    <!-- Add more social media links as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Other sections like Header, Hero, About, Portfolio, Services, Testimonials, Contact would be here -->
+
+             
+</body>
+</html>
